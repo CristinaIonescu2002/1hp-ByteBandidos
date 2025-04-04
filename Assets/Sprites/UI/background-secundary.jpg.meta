@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e826f04665b6a4f45b43ed2fc7b478a9
+guid: 9c8e856282be95c4ca605fa12cff3e8e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2142084395558705074
-    second: angel-idle-5.2_0
-  - first:
-      213: 725069844374800336
-    second: angel-idle-5.2_1
+      213: -7414564141922357398
+    second: background-secundary_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: angel-idle-5.2_0
+      name: background-secundary_0
       rect:
         serializedVersion: 2
-        x: 107
-        y: 125
-        width: 518
-        height: 308
+        x: 0
+        y: 0
+        width: 1366
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b71f2498663abd10800000000000000
-      internalID: 2142084395558705074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel-idle-5.2_1
-      rect:
-        serializedVersion: 2
-        x: 347
-        y: 419
-        width: 38
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0d7ce4f8e27ff0a00800000000000000
-      internalID: 725069844374800336
+      spriteID: a6f6e5c623d2a1990800000000000000
+      internalID: -7414564141922357398
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      angel-idle-5.2_0: 2142084395558705074
-      angel-idle-5.2_1: 725069844374800336
+      background-secundary_0: -7414564141922357398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
