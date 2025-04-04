@@ -3,11 +3,11 @@ guid: 5ed6ed69a4f373f4d833673693b2b7a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 504759360730929921
-    second: angel3_0
+      213: -8469683655155257762
+    second: angel3.1_0
   - first:
-      213: -5678292880754048389
-    second: angel3_1
+      213: -8310569376830445654
+    second: angel3.1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,45 +103,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: angel3_0
-      rect:
-        serializedVersion: 2
-        x: 347
-        y: 431
-        width: 38
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10b9b69d6f3410700800000000000000
-      internalID: 504759360730929921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel3_1
+      name: angel3.1_0
       rect:
         serializedVersion: 2
         x: 251
         y: 95
         width: 224
-        height: 332
+        height: 369
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b728608b5b6a231b0800000000000000
-      internalID: -5678292880754048389
+      spriteID: aa728ccde2deaac80800000000000000
+      internalID: -8310569376830445654
       vertices: []
       indices: 
       edges: []
@@ -150,7 +128,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +138,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      angel3_0: 504759360730929921
-      angel3_1: -5678292880754048389
+      angel3.1_0: -8310569376830445654
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -3,11 +3,11 @@ guid: 280b50db9ebd7064f85eae85b7716da5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1502920975129771416
-    second: angel5_0
+      213: 771963800657297003
+    second: angel5.1_0
   - first:
-      213: 7824590278500376573
-    second: angel5_1
+      213: -1893234515059163545
+    second: angel5.1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,45 +103,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: angel5_0
+      name: angel5.1_0
       rect:
         serializedVersion: 2
         x: 107
-        y: 125
+        y: 129
         width: 518
         height: 308
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89df7100aa27bd410800000000000000
-      internalID: 1502920975129771416
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel5_1
-      rect:
-        serializedVersion: 2
-        x: 347
-        y: 419
-        width: 38
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dff5dfed667869c60800000000000000
-      internalID: 7824590278500376573
+      spriteID: b6e73a59cf096ba00800000000000000
+      internalID: 771963800657297003
       vertices: []
       indices: 
       edges: []
@@ -150,7 +128,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 62766d73c21639d428b3ac5aa007c087
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +138,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      angel5_0: 1502920975129771416
-      angel5_1: 7824590278500376573
+      angel5.1_0: 771963800657297003
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
