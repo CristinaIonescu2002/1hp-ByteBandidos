@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      angel-idle-5.2_0: 2142084395558705074
+      angel-idle-5.2_1: 725069844374800336
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
