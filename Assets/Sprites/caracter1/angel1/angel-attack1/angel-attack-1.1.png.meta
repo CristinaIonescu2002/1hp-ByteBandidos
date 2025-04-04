@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c226bc9c0cdb4804d9d844cea1847ca9
+guid: a97449097b0b989418699f2f99cf4cf3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8355920414806080934
-    second: angel8_0
+      213: 4943848877850617493
+    second: angel-attack-1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: angel8_0
+      name: angel-attack-1_0
       rect:
         serializedVersion: 2
-        x: 215
-        y: 31
-        width: 554
-        height: 905
+        x: 119
+        y: 125
+        width: 494
+        height: 458
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a528c0087aec90c80800000000000000
-      internalID: -8355920414806080934
+      spriteID: 596ef7b5c541c9440800000000000000
+      internalID: 4943848877850617493
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      angel-attack-1_0: 4943848877850617493
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
