@@ -128,6 +128,13 @@ public class SelectMode : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Play: " + selectedLevel + " - " + selectedMode);
+
+        GlobalVariables.GAME_MODE = selectedMode;
+        GlobalVariables.GAME_LVL = selectedLevel;
+
+        Debug.Log("Global var (mode-lvl): " + GlobalVariables.GAME_MODE + " - " + GlobalVariables.GAME_LVL);
+
+        GlobalVariables.LoadLvl();
         // PlayerPrefs.SetString("level", selectedLevel);
         // PlayerPrefs.SetString("mode", selectedMode);
         // SceneManager.LoadScene("YourLevelLoaderScene");
