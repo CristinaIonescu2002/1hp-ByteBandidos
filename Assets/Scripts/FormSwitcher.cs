@@ -30,9 +30,8 @@ public class FormSwitcher : MonoBehaviour
         // Verificăm ce tastă folosește acest jucător
         if (isPlayerOne)
         {
-            if (Input.GetKeyDown(GlobalVariables.P1_SWITCHFORM))
+            if (!string.IsNullOrEmpty(GlobalVariables.P1_SWITCHFORM) && Input.GetKeyDown(GlobalVariables.P1_SWITCHFORM))
             {
-                // Dacă personajul este controlat, fă switch
                 if ((angelMovement && angelMovement.isControlled) || (devilMovement && devilMovement.isControlled))
                 {
                     SwitchForm();
@@ -41,7 +40,7 @@ public class FormSwitcher : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(GlobalVariables.P2_SWITCHFORM))
+            if (!string.IsNullOrEmpty(GlobalVariables.P2_SWITCHFORM) && Input.GetKeyDown(GlobalVariables.P2_SWITCHFORM))
             {
                 if ((angelMovement && angelMovement.isControlled) || (devilMovement && devilMovement.isControlled))
                 {
