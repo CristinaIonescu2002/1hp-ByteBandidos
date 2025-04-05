@@ -8,6 +8,8 @@ public class CameraFollow : MonoBehaviour
 
     void LateUpdate()
     {
+        if (target == null)
+            return;
         // Calculăm poziția dorită ca suma poziției caracterului și a offset-ului
         Vector3 desiredPosition = target.position + offset;
         // Calculăm o poziție netezită între poziția actuală și cea dorită
