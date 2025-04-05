@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using System.Diagnostics;
 
 public class DevilMovement : MonoBehaviour
 {
@@ -48,20 +49,26 @@ public class DevilMovement : MonoBehaviour
         // Citește inputurile în funcție de jucător
         if (!isPlayerOne)
         {
-            if (Input.GetKey(GlobalVariables.P2_LEFT))
+            if (!string.IsNullOrEmpty(GlobalVariables.P2_LEFT) && Input.GetKey(GlobalVariables.P2_LEFT))
                 horizontalInput = -1f;
-            if (Input.GetKey(GlobalVariables.P2_RIGHT))
+            if (!string.IsNullOrEmpty(GlobalVariables.P2_RIGHT) && Input.GetKey(GlobalVariables.P2_RIGHT))
                 horizontalInput = 1f;
-            if (Input.GetKeyDown(GlobalVariables.P2_UP))
-                {jumpInput = true; Debug.Log("Jumping!");} // Debug pentru a verifica săritura
-                
+            if (!string.IsNullOrEmpty(GlobalVariables.P2_UP) && Input.GetKeyDown(GlobalVariables.P2_UP))
+            {
+                jumpInput = true;
+            }
         }
         else
         {
             // Dacă, din orice motiv, Devil ar folosi tastele P1 (nu se va folosi în mod normal)
-            if (Input.GetKey(GlobalVariables.P1_LEFT)) horizontalInput = -1f;
-            if (Input.GetKey(GlobalVariables.P1_RIGHT)) horizontalInput = 1f;
-            if (Input.GetKeyDown(GlobalVariables.P1_UP)) {jumpInput = true; Debug.Log("Jumping!");} // Debug pentru a verifica săritura
+            if (!string.IsNullOrEmpty(GlobalVariables.P1_LEFT) && Input.GetKey(GlobalVariables.P1_LEFT))
+                horizontalInput = -1f;
+            if (!string.IsNullOrEmpty(GlobalVariables.P1_RIGHT) && Input.GetKey(GlobalVariables.P1_RIGHT))
+                horizontalInput = 1f;
+            if (!string.IsNullOrEmpty(GlobalVariables.P1_UP) && Input.GetKeyDown(GlobalVariables.P1_UP))
+            {
+                jumpInput = true;
+            }
         }
         
 
@@ -74,7 +81,6 @@ public class DevilMovement : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isJumping = true;
-            Debug.Log("Jumping!"); // Debug pentru a verifica săritura
         }
 
         // Dacă personajul este pe sol, setăm isJumping la false

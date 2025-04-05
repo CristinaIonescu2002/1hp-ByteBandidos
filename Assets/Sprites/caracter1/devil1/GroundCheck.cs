@@ -15,11 +15,6 @@ public class GroundCheck : MonoBehaviour
         // Folosim OverlapCircle pentru a detecta dacă există vreun collider pe layer-ul "Ground" în jurul poziției groundCheck
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // Debug pentru a vedea rezultatul în consolă
-        if (isGrounded)
-            Debug.Log("Personajul este pe sol.");
-        else
-            Debug.Log("Personajul NU este pe sol.");
     }
 
     // Metodă opțională pentru a desena cercul în Editor (ajută la vizualizare)
