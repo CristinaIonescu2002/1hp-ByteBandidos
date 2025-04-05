@@ -86,8 +86,8 @@ public class GlobalVariables : MonoBehaviour
 
         switch (GAME_LVL)
         {
-            case "Tutorial": SceneManager.LoadSceneAsync(4); break;
-            case "Level1": Debug.Log("Loading Level1"); SceneManager.LoadSceneAsync(5); break;
+            case "Tutorial": SceneManager.LoadSceneAsync(3); break;
+            case "Level1": Debug.Log("Loading Level1"); SceneManager.LoadSceneAsync(4); break;
             // case "Level2": SceneManager.LoadSceneAsync(1);
             // case "Level3": SceneManager.LoadSceneAsync(1);
             // case "Level4": SceneManager.LoadSceneAsync(1);
