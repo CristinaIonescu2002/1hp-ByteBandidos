@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3073060199512371523}
   - component: {fileID: 398898078533902701}
   - component: {fileID: 7763602736436976417}
+  - component: {fileID: 2184648360378490533}
   m_Layer: 0
   m_Name: BlueDevilPrefab
   m_TagString: Player
@@ -273,7 +274,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5753900529982790612}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7554dc41b190b19429dfd1eb80115994, type: 3}
   m_Name: 
@@ -281,6 +282,25 @@ MonoBehaviour:
   isPlayerOne: 1
   color: Blue
   form: Devil
+--- !u!114 &2184648360378490533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5753900529982790612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 644b63454a4e6fe4cb23fa6396b607b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayerOne: 1
+  isAngel: 0
+  player1AngelPrefab: {fileID: 5513277691459234078, guid: c8410592f4d493d4f8b85a386018147d, type: 3}
+  player1DemonPrefab: {fileID: 5753900529982790612}
+  player2AngelPrefab: {fileID: 8039413063200292846, guid: e14eca5dcdd0f4b4ba533fcd156e416d, type: 3}
+  player2DemonPrefab: {fileID: 3329400587279094932, guid: 74a2e2fe20fe2884097995d5e030e995, type: 3}
+  spawnOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &7468134720025106475
 GameObject:
   m_ObjectHideFlags: 0

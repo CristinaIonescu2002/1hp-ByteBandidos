@@ -50,7 +50,7 @@ public class GlobalVariables : MonoBehaviour
     public static void LoadLvl(){
         switch (GAME_MODE)
         {
-            case "Coop": 
+            case "Coop":
                 P1_UP = "w";
                 P1_DOWN = "s";
                 P1_LEFT = "a";
@@ -87,7 +87,7 @@ public class GlobalVariables : MonoBehaviour
         switch (GAME_LVL)
         {
             case "Tutorial": SceneManager.LoadSceneAsync(4); break;
-            case "Level1": SceneManager.LoadSceneAsync(5); break;
+            case "Level1": Debug.Log("Loading Level1"); SceneManager.LoadSceneAsync(5); break;
             // case "Level2": SceneManager.LoadSceneAsync(1);
             // case "Level3": SceneManager.LoadSceneAsync(1);
             // case "Level4": SceneManager.LoadSceneAsync(1);

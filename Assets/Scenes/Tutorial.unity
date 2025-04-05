@@ -911,6 +911,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2069925325}
     m_Modifications:
+    - target: {fileID: -2074474001833455785, guid: c8410592f4d493d4f8b85a386018147d, type: 3}
+      propertyPath: myCameraFollow
+      value: 
+      objectReference: {fileID: 779867486}
     - target: {fileID: 2566698799513562071, guid: c8410592f4d493d4f8b85a386018147d, type: 3}
       propertyPath: m_LocalScale.x
       value: 4.435612
@@ -981,6 +985,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2566698799513562071, guid: c8410592f4d493d4f8b85a386018147d, type: 3}
   m_PrefabInstance: {fileID: 573327628}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &573327630 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5188913473407928236, guid: c8410592f4d493d4f8b85a386018147d, type: 3}
+  m_PrefabInstance: {fileID: 573327628}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6447a340d630142ae7865547fa1ede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &581462089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -989,6 +1004,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2069925325}
     m_Modifications:
+    - target: {fileID: 1371567409663324330, guid: 74a2e2fe20fe2884097995d5e030e995, type: 3}
+      propertyPath: myCameraFollow
+      value: 
+      objectReference: {fileID: 2016258298}
     - target: {fileID: 1917995921108283336, guid: 74a2e2fe20fe2884097995d5e030e995, type: 3}
       propertyPath: m_LocalPosition.x
       value: -74.3
@@ -1047,6 +1066,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1917995921108283336, guid: 74a2e2fe20fe2884097995d5e030e995, type: 3}
   m_PrefabInstance: {fileID: 581462089}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &581462091 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7482072109883237611, guid: 74a2e2fe20fe2884097995d5e030e995, type: 3}
+  m_PrefabInstance: {fileID: 581462089}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc3589a438595345ab0126cc6165a2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &779867485
 GameObject:
   m_ObjectHideFlags: 0
@@ -5532,7 +5562,7 @@ GameObject:
   - component: {fileID: 2016258298}
   m_Layer: 0
   m_Name: DownCamera
-  m_TagString: MainCamera
+  m_TagString: camera1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5871,8 +5901,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91e6b86ee74021438d60b87cd9f95b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 0}
-  player2: {fileID: 0}
+  player1: {fileID: 573327630}
+  player2: {fileID: 581462091}
 --- !u!114 &2069925327
 MonoBehaviour:
   m_ObjectHideFlags: 0
