@@ -74,7 +74,6 @@ public class DevilMovement : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isJumping = true;
-            Debug.Log("Jumping!"); // Debug pentru a verifica săritura
         }
 
         // Dacă personajul este pe sol, setăm isJumping la false

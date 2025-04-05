@@ -109,9 +109,9 @@ TextureImporter:
         x: 107
         y: 125
         width: 518
-        height: 308
+        height: 315
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -124,33 +124,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: angel-idle-5.2_1
-      rect:
-        serializedVersion: 2
-        x: 347
-        y: 419
-        width: 38
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0d7ce4f8e27ff0a00800000000000000
-      internalID: 725069844374800336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 901345c8cd33de441993880d7555c5fe
     internalID: 0
     vertices: []
     indices: 

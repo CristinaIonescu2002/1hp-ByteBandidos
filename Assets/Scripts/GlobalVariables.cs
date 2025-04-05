@@ -31,6 +31,11 @@ public class GlobalVariables : MonoBehaviour
     // switch characters
     public static string SWITCH = "";
 
+    // switch forms
+    public static string P1_SWITCHFORM = "";
+    public static string P2_SWITCHFORM = "";
+
+
 
 
     // Option menu
@@ -53,6 +58,7 @@ public class GlobalVariables : MonoBehaviour
                 P1_DROP = ""; // ma gandeam la left shift
                 P1_PICK = ""; // ma gandeam la left shift
                 P1_GIVE = ""; // ma gandeam la left ctrl
+                P1_SWITCHFORM = "left shift"; // ma gandeam la left shift
 
                 P2_UP = "up"; // sageata sus
                 P2_DOWN = "down"; // sageata jos
@@ -61,6 +67,7 @@ public class GlobalVariables : MonoBehaviour
                 P2_DROP = ""; // ma gandeam la right shift
                 P2_PICK = ""; // ma gandeam la right shift
                 P2_GIVE = ""; // ma gandeam la right ctrl
+                P2_SWITCHFORM = "right shift"; // ma gandeam la right shift
                 break;
 
             case "Singleplayer": 
@@ -71,6 +78,7 @@ public class GlobalVariables : MonoBehaviour
                 P1_DROP = P2_DROP = ""; // ma gandeam la left shift
                 P1_PICK = P2_PICK = ""; // ma gandeam la left shift
                 P1_GIVE = P2_GIVE = ""; // ma gandeam la left ctrl
+                P1_SWITCHFORM = P2_SWITCHFORM = "left shift"; // ma gandeam la left shift
 
                 SWITCH = "space";
                 break;
