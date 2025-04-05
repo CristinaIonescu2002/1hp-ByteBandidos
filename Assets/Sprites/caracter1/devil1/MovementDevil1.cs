@@ -31,10 +31,10 @@ public class DevilMovement : MonoBehaviour
         // Pentru Devil, gravitația rămâne activă
         rb.gravityScale = 1f;
         // În Singleplayer, Devil pornește necontrolat
-        if (GlobalVariables.GAME_MODE == "Singleplayer")
-        {
-            isControlled = false;
-        }
+        // if (GlobalVariables.GAME_MODE == "Singleplayer")
+        // {
+        //     isControlled = false;
+        // }
     }
 
     void Update()
