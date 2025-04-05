@@ -18,7 +18,7 @@ public class GlobalVariables : MonoBehaviour
     // give the item holt to the other player
     public static string P1_GIVE = "";
 
-    // player 2
+    // player 1
     public static string P2_UP = "";
     public static string P2_DOWN = "";
     public static string P2_LEFT = "";
@@ -32,9 +32,6 @@ public class GlobalVariables : MonoBehaviour
     public static string SWITCH = "";
 
 
-
-    // Option menu
-    public static bool ShowFPSDetails = true;
 
     void Start()
     {
