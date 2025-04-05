@@ -36,8 +36,13 @@ public class GlobalVariables : MonoBehaviour
     public static string P2_SWITCHFORM = "";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 =======
+=======
+
+
+>>>>>>> Stashed changes
 
 
 >>>>>>> Stashed changes
