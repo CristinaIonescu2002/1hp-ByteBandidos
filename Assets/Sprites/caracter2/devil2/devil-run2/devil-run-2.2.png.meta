@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      devil-run-2.2_0: 4042757007542097006
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

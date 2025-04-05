@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      devil-idle-2.2_0: -3756129033029454854
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

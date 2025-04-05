@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      devil-jump-2.2_0: 6499632574891224397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
