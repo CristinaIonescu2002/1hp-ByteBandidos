@@ -35,7 +35,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -460.83, y: -3.06, z: 0.49582815}
-  m_LocalScale: {x: 1.8, y: 1.8, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 955887969287960007}
@@ -242,8 +242,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isControlled: 1
   isPlayerOne: 1
-  moveSpeed: 5
-  jumpForce: 10
+  moveSpeed: 20
+  jumpForce: 17
   groundCheck: {fileID: 955887969287960007}
   groundCheckRadius: 0.3
   groundLayer:
@@ -300,7 +300,9 @@ MonoBehaviour:
   player1DemonPrefab: {fileID: 5753900529982790612}
   player2AngelPrefab: {fileID: 8039413063200292846, guid: e14eca5dcdd0f4b4ba533fcd156e416d, type: 3}
   player2DemonPrefab: {fileID: 3329400587279094932, guid: 74a2e2fe20fe2884097995d5e030e995, type: 3}
+  myCameraFollow: {fileID: 0}
   spawnOffset: {x: 0, y: 0, z: 0}
+  isControlled: 1
 --- !u!1 &7468134720025106475
 GameObject:
   m_ObjectHideFlags: 0

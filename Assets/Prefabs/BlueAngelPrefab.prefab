@@ -240,7 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isControlled: 1
   isPlayerOne: 1
-  moveSpeed: 5
+  moveSpeed: 20
 --- !u!114 &7715915289320995166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,4 +274,6 @@ MonoBehaviour:
   player1DemonPrefab: {fileID: 5753900529982790612, guid: 5d66c776c26a4a343b55213b2acd61c4, type: 3}
   player2AngelPrefab: {fileID: 8039413063200292846, guid: e14eca5dcdd0f4b4ba533fcd156e416d, type: 3}
   player2DemonPrefab: {fileID: 3329400587279094932, guid: 74a2e2fe20fe2884097995d5e030e995, type: 3}
+  myCameraFollow: {fileID: 0}
   spawnOffset: {x: 0, y: 0, z: 0}
+  isControlled: 1
