@@ -31,7 +31,7 @@ public class PlayerSwitcher : MonoBehaviour
     {
         // Aici folosim tasta definită în GlobalVariables pentru comutare
         // Asigură-te că GlobalVariables.SWITCH e setat corect (ex: "space")
-        if (Input.GetKeyDown(GlobalVariables.SWITCH))
+        if (!string.IsNullOrEmpty(GlobalVariables.SWITCH) && Input.GetKeyDown(GlobalVariables.SWITCH))
         {
             controllingPlayer1 = !controllingPlayer1;
             player1.isControlled = controllingPlayer1;
