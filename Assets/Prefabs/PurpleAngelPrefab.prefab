@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4752290466285315613}
   - component: {fileID: 4539508921223151592}
   - component: {fileID: 2531508265495362372}
+  - component: {fileID: 3666977765911064719}
   m_Layer: 0
   m_Name: PurpleAngelPrefab
   m_TagString: Player
@@ -247,7 +248,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8039413063200292846}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7554dc41b190b19429dfd1eb80115994, type: 3}
   m_Name: 
@@ -255,3 +256,23 @@ MonoBehaviour:
   isPlayerOne: 0
   color: Purple
   form: Angel
+--- !u!114 &3666977765911064719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8039413063200292846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 644b63454a4e6fe4cb23fa6396b607b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayerOne: 0
+  isAngel: 1
+  player1AngelPrefab: {fileID: 5513277691459234078, guid: c8410592f4d493d4f8b85a386018147d, type: 3}
+  player1DemonPrefab: {fileID: 5753900529982790612, guid: 5d66c776c26a4a343b55213b2acd61c4, type: 3}
+  player2AngelPrefab: {fileID: 8039413063200292846}
+  player2DemonPrefab: {fileID: 3329400587279094932, guid: 74a2e2fe20fe2884097995d5e030e995, type: 3}
+  myCameraFollow: {fileID: 0}
+  spawnOffset: {x: 0, y: 0, z: 0}
