@@ -70,14 +70,14 @@ public class CharacterFormSwitcher : MonoBehaviour
         {
             if (isPlayerOne)
             {
-                if (Input.GetKeyDown(GlobalVariables.P1_SWITCHFORM))
+                if (!string.IsNullOrEmpty(GlobalVariables.P1_SWITCHFORM) && Input.GetKeyDown(GlobalVariables.P1_SWITCHFORM))
                 {
                     SwitchForm();
                 }
             }
             else
             {
-                if (Input.GetKeyDown(GlobalVariables.P2_SWITCHFORM))
+                if (!string.IsNullOrEmpty(GlobalVariables.P2_SWITCHFORM) && Input.GetKeyDown(GlobalVariables.P2_SWITCHFORM))
                 {
                     SwitchForm();
                 }

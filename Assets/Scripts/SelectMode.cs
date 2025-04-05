@@ -49,7 +49,7 @@ public class SelectMode : MonoBehaviour
 
         tutorialButton.onClick.AddListener(() => SelectLevel("Tutorial"));
         lvl1Button.onClick.AddListener(() => SelectLevel("Level1"));
-        lvl2Button.onClick.AddListener(() => SelectLevel("Level2"));
+        // lvl2Button.onClick.AddListener(() => SelectLevel("Level2"));
         // lvl3Button.onClick.AddListener(() => SelectLevel("Level3"));
         // lvl4Button.onClick.AddListener(() => SelectLevel("Level4"));
 
@@ -65,7 +65,7 @@ public class SelectMode : MonoBehaviour
 
         tutorialCheck.sprite = grayCheck;
         lvl1Check.sprite = grayCheck;
-        lvl2Check.sprite = grayCheck;
+        // lvl2Check.sprite = grayCheck;
         // lvl3Check.sprite = grayCheck;
         // lvl4Check.sprite = grayCheck;
 
@@ -73,7 +73,7 @@ public class SelectMode : MonoBehaviour
         {
             case "Tutorial": tutorialCheck.sprite = greenCheck; break;
             case "Level1": lvl1Check.sprite = greenCheck; break;
-            case "Level2": lvl2Check.sprite = greenCheck; break;
+            // case "Level2": lvl2Check.sprite = greenCheck; break;
             // case "Level3": lvl3Check.sprite = greenCheck; break;
             // case "Level4": lvl4Check.sprite = greenCheck; break;
         }

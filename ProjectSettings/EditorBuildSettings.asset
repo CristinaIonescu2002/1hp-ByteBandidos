@@ -16,14 +16,14 @@ EditorBuildSettings:
     guid: 8758f14b10a7c33469fa78ccfb1cd0e2
   - enabled: 1
     path: Assets/PixelFX_vol1/Demo.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    guid: 42649a5beef9568488d231a85415b56b
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 4a57deeb99035ad4c9a222ffc92c04be
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 417d0f40649ed69458af2132901d020e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level2.unity
     guid: 3d325a27f5b6f0c47a9616fad68e6301
   m_configObjects:
