@@ -37,6 +37,7 @@ public class GlobalVariables : MonoBehaviour
 
 
 
+
     // Option menu
     public static bool ShowFPSDetails = true;
 
