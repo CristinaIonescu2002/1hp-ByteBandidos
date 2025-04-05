@@ -42,17 +42,17 @@ public class AngelMovement : MonoBehaviour
         // Pentru Singleplayer ambele folosec aceleași taste din GlobalVariables
         if(isPlayerOne)
         {
-            if(Input.GetKey(GlobalVariables.P1_LEFT)) horizontalInput -= 1f;
-            if(Input.GetKey(GlobalVariables.P1_RIGHT)) horizontalInput += 1f;
-            if(Input.GetKey(GlobalVariables.P1_UP)) verticalInput += 1f;
-            if(Input.GetKey(GlobalVariables.P1_DOWN)) verticalInput -= 1f;
+            if (!string.IsNullOrEmpty(GlobalVariables.P1_LEFT) && Input.GetKey(GlobalVariables.P1_LEFT)) horizontalInput -= 1f;
+            if (!string.IsNullOrEmpty(GlobalVariables.P1_RIGHT) && Input.GetKey(GlobalVariables.P1_RIGHT)) horizontalInput += 1f;
+            if (!string.IsNullOrEmpty(GlobalVariables.P1_UP) && Input.GetKey(GlobalVariables.P1_UP)) verticalInput += 1f;
+            if (!string.IsNullOrEmpty(GlobalVariables.P1_DOWN) && Input.GetKey(GlobalVariables.P1_DOWN)) verticalInput -= 1f;
         }
         else
         {
-            if(Input.GetKey(GlobalVariables.P2_LEFT)) horizontalInput -= 1f;
-            if(Input.GetKey(GlobalVariables.P2_RIGHT)) horizontalInput += 1f;
-            if(Input.GetKey(GlobalVariables.P2_UP)) verticalInput += 1f;
-            if(Input.GetKey(GlobalVariables.P2_DOWN)) verticalInput -= 1f;
+            if (!string.IsNullOrEmpty(GlobalVariables.P2_LEFT) && Input.GetKey(GlobalVariables.P2_LEFT)) horizontalInput -= 1f;
+            if (!string.IsNullOrEmpty(GlobalVariables.P2_RIGHT) && Input.GetKey(GlobalVariables.P2_RIGHT)) horizontalInput += 1f;
+            if (!string.IsNullOrEmpty(GlobalVariables.P2_UP) && Input.GetKey(GlobalVariables.P2_UP)) verticalInput += 1f;
+            if (!string.IsNullOrEmpty(GlobalVariables.P2_DOWN) && Input.GetKey(GlobalVariables.P2_DOWN)) verticalInput -= 1f;
         }
 
         // Actualizează animațiile (dacă folosești blend tree sau alte efecte)
