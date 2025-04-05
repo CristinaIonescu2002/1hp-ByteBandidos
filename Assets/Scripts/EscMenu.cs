@@ -5,26 +5,56 @@ public class EscMenu : MonoBehaviour
 {
     private static string previousScene;
 
-    void Update()
+    public GameObject pausePanel;
+
+    private bool isPaused = false;
+
+    void Start()
     {
-        // if (Input.GetKeyDown(KeyCode.Escape))
-        // {
-        //     if (SceneManager.GetActiveScene().buildIndex != 0)
-        //     {
-        //         Debug.Log("Stop la foc!");
-        //         previousScene = SceneManager.GetActiveScene().buildIndex;
-        //         Time.timeScale = 0f;
-        //         SceneManager.LoadScene("Options");
-        //     }
-        // }
+        pausePanel.SetActive(false);
+        Time.timeScale = 1f;
     }
 
-    public static void ResumeGame()
+    void Update()
     {
-        // Time.timeScale = 1f;
-        // if (!string.IsNullOrEmpty(previousScene))
-        // {
-        //     SceneManager.LoadScene(previousScene);
-        // }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isPaused)
+                Resume();
+            else
+                Pause();
+        }
+    }
+
+    public void Pause()
+    {
+        Debug.Log("Stop la foc!");
+        pausePanel.SetActive(true);
+        Time.timeScale = 0f;
+        isPaused = true;
+    }
+
+    public void Settings()
+    {
+
+    }
+
+    public void Resume()
+    {
+        pausePanel.SetActive(false);
+        Time.timeScale = 1f;
+        isPaused = false;
+    }
+
+    public void QuitToMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadSceneAsync(0);
+    }
+
+    public void Quit()
+    {
+        Debug.Log("QUIT called");
+        Application.Quit();
     }
 }
