@@ -1101,6 +1101,7 @@ Animator:
   m_WriteDefaultValuesOnDisable: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!114 &1420715274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,6 +1423,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1595127472}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
