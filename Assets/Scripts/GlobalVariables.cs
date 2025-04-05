@@ -18,7 +18,7 @@ public class GlobalVariables : MonoBehaviour
     // give the item holt to the other player
     public static string P1_GIVE = "";
 
-    // player 1
+    // player 2
     public static string P2_UP = "";
     public static string P2_DOWN = "";
     public static string P2_LEFT = "";

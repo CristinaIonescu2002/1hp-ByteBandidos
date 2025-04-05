@@ -22,7 +22,11 @@ public class AngelMovement : MonoBehaviour
         // Dezactivează gravitația, deoarece personajul nostru zboară
         rb.gravityScale = 0;
 
-        
+        // În Singleplayer, asigură-te că Angel este controlat
+        if (GlobalVariables.GAME_MODE == "Singleplayer")
+        {
+            isControlled = true;
+        }
     }
 
     void Update()
