@@ -33,6 +33,9 @@ public class GlobalVariables : MonoBehaviour
 
 
 
+    // Option menu
+    public static bool ShowFPSDetails = true;
+
     void Start()
     {
         Debug.Log("Current game mode: " + GAME_MODE + "!");
