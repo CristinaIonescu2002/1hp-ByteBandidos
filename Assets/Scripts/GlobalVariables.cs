@@ -34,6 +34,11 @@ public class GlobalVariables : MonoBehaviour
     // switch forms
     public static string P1_SWITCHFORM = "";
     public static string P2_SWITCHFORM = "";
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 
 
 
