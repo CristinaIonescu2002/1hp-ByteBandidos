@@ -43,7 +43,7 @@ public class GlobalVariables : MonoBehaviour
         switch (GAME_MODE)
         {
             case "Coop": 
-                P1_UP = P1_DOWN != "" ? "w" : P1_DOWN;
+                P1_UP = "w";
                 P1_DOWN = "s";
                 P1_LEFT = "a";
                 P1_RIGHT = "d";
@@ -51,10 +51,10 @@ public class GlobalVariables : MonoBehaviour
                 P1_PICK = ""; // ma gandeam la left shift
                 P1_GIVE = ""; // ma gandeam la left ctrl
 
-                P2_UP = ""; // sageata sus
-                P2_DOWN = ""; // sageata jos
-                P2_LEFT = ""; // sageata stanga
-                P2_RIGHT = ""; // sageata dreapta
+                P2_UP = "up"; // sageata sus
+                P2_DOWN = "down"; // sageata jos
+                P2_LEFT = "left"; // sageata stanga
+                P2_RIGHT = "right"; // sageata dreapta
                 P2_DROP = ""; // ma gandeam la right shift
                 P2_PICK = ""; // ma gandeam la right shift
                 P2_GIVE = ""; // ma gandeam la right ctrl
@@ -69,7 +69,7 @@ public class GlobalVariables : MonoBehaviour
                 P1_PICK = P2_PICK = ""; // ma gandeam la left shift
                 P1_GIVE = P2_GIVE = ""; // ma gandeam la left ctrl
 
-                SWITCH = "Space";
+                SWITCH = "space";
                 break;
         }
 
