@@ -22,33 +22,33 @@ public class ColiderCheckVictory : MonoBehaviour
     {
         if (collision.gameObject.name.Contains("Apple")) {
             if (this.gameObject.name.Contains("Blue") && Input.GetKey(GlobalVariables.P1_PICK)){
-                GlobalVariables.P2_inventory = 1;
+                GlobalVariables.P1_inventory = 1;
                 Destroy(collision.gameObject);
             }
 
             if (this.gameObject.name.Contains("Purple") && Input.GetKey(GlobalVariables.P2_PICK)){
-                GlobalVariables.P1_inventory = 1;
+                GlobalVariables.P2_inventory = 1;
                 Destroy(collision.gameObject);
             }
 
         } else if (collision.gameObject.name.Contains("Pitchfork")) {
             if (this.gameObject.name.Contains("Blue") && Input.GetKey(GlobalVariables.P1_PICK)){
-                GlobalVariables.P2_inventory = 2;
+                GlobalVariables.P1_inventory = 2;
                 Destroy(collision.gameObject);
             }
 
             if (this.gameObject.name.Contains("Purple") && Input.GetKey(GlobalVariables.P2_PICK)){
-                GlobalVariables.P1_inventory = 2;
+                GlobalVariables.P2_inventory = 2;
                 Destroy(collision.gameObject);
             }
         } else if (collision.gameObject.name.Contains("Flower")) {
             if (this.gameObject.name.Contains("Blue") && Input.GetKey(GlobalVariables.P1_PICK)){
-                GlobalVariables.P2_inventory = 3;
+                GlobalVariables.P1_inventory = 3;
                 Destroy(collision.gameObject);
             }
 
             if (this.gameObject.name.Contains("Purple") && Input.GetKey(GlobalVariables.P2_PICK)){
-                GlobalVariables.P1_inventory = 3;
+                GlobalVariables.P2_inventory = 3;
                 Destroy(collision.gameObject);
             }
         }

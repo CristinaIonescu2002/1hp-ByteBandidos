@@ -73,7 +73,7 @@ public class GlobalVariables : MonoBehaviour
                 P1_RIGHT = "d";
                 P1_DROP = "";
                 P1_PICK = "left ctrl";
-                P1_GIVE = ""; // alt
+                P1_GIVE = "left alt"; // alt
                 P1_SWITCHFORM = "left shift";
 
                 P2_UP = "up";
@@ -82,7 +82,7 @@ public class GlobalVariables : MonoBehaviour
                 P2_RIGHT = "right";
                 P2_DROP = "";
                 P2_PICK = "right ctrl";
-                P2_GIVE = ""; // alt
+                P2_GIVE = "right alt"; // alt
                 P2_SWITCHFORM = "right shift"; 
                 break;
 
@@ -93,7 +93,7 @@ public class GlobalVariables : MonoBehaviour
                 P1_RIGHT = P2_RIGHT = "d";
                 P1_DROP = P2_DROP = "";
                 P1_PICK = P2_PICK = "left ctrl";
-                P1_GIVE = P2_GIVE = ""; // alt
+                P1_GIVE = P2_GIVE = "left alt"; // alt
                 P1_SWITCHFORM = P2_SWITCHFORM = "left shift";
 
                 SWITCH = "space";
