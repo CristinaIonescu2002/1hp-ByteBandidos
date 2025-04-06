@@ -245,7 +245,7 @@ MonoBehaviour:
   isControlled: 1
   isPlayerOne: 1
   moveSpeed: 25
-  jumpForce: 17
+  jumpForce: 20
   groundCheck: {fileID: 955887969287960007}
   groundCheckRadius: 0.3
   groundLayer:
