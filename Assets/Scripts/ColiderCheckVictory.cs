@@ -4,8 +4,8 @@ public class ColiderCheckVictory : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("A intrat: " + this.gameObject.name);
-        Debug.Log("A intrat: " + collision.gameObject.name);
+        // Debug.Log("A intrat: " + this.gameObject.name);
+        // Debug.Log("A intrat: " + collision.gameObject.name);
 
         if (collision.gameObject.name == "SafeSpaceVictory") {
             if (this.gameObject.name.Contains("Blue")){
