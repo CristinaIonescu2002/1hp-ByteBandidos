@@ -46,6 +46,8 @@ public class CharacterFormSwitcher : MonoBehaviour
 
     void Update()
     {
+        if (!isControlled)
+            return; // Dacă nu ești controlat, ieși din Update
         if (GlobalVariables.GAME_MODE == "Singleplayer")
         {
             // Doar instanța cu isPlayerOne == true procesează tasta SPACE pentru comutarea controlului.
@@ -55,6 +57,14 @@ public class CharacterFormSwitcher : MonoBehaviour
                 controlledIsPlayerOne = !controlledIsPlayerOne;
                 Debug.Log("Switch control pressed. New controlledIsPlayerOne = " + controlledIsPlayerOne);
             }
+            else 
+            {
+                // Dacă nu ești Player1, dar ai apăsat tasta de switch control, ieși din Update
+                if (!isPlayerOne && Input.GetKeyDown(GlobalVariables.SWITCH))
+                {
+                    return;
+                }
+            }
 
             // Actualizează flag-ul de control pentru această instanță
             isControlled = (isPlayerOne == controlledIsPlayerOne);
@@ -63,7 +73,13 @@ public class CharacterFormSwitcher : MonoBehaviour
             // Apelăm switch form doar pentru instanța controlată
             if (isControlled && Input.GetKeyDown(GlobalVariables.P1_SWITCHFORM))
             {
-                SwitchForm();
+                if (this.gameObject.name.Contains("Devil") && GlobalVariables.P1_inventory == 3) {
+                        SwitchForm();
+                    } else if (this.gameObject.name.Contains("Angel") 
+                    && (GlobalVariables.P1_inventory == 1 || GlobalVariables.P1_inventory == 2)) {
+                        SwitchForm();
+                    }
+
             }
         }
         else // Modul Coop
