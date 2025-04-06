@@ -72,14 +72,28 @@ public class CharacterFormSwitcher : MonoBehaviour
             {
                 if (!string.IsNullOrEmpty(GlobalVariables.P1_SWITCHFORM) && Input.GetKeyDown(GlobalVariables.P1_SWITCHFORM))
                 {
-                    SwitchForm();
+                    if (this.gameObject.name.Contains("Devil") && GlobalVariables.P1_inventory == 3) {
+                        SwitchForm();
+                    } else if (this.gameObject.name.Contains("Angel") 
+                    && (GlobalVariables.P1_inventory == 1 || GlobalVariables.P1_inventory == 2)) {
+                        SwitchForm();
+                    }
+
+                    GlobalVariables.P1_inventory = 0;
                 }
             }
             else
             {
                 if (!string.IsNullOrEmpty(GlobalVariables.P2_SWITCHFORM) && Input.GetKeyDown(GlobalVariables.P2_SWITCHFORM))
                 {
-                    SwitchForm();
+                    if (this.gameObject.name.Contains("Devil") && GlobalVariables.P2_inventory == 3) {
+                        SwitchForm();
+                    } else if (this.gameObject.name.Contains("Angel") 
+                    && (GlobalVariables.P2_inventory == 1 || GlobalVariables.P2_inventory == 2)) {
+                        SwitchForm();
+                    }
+
+                    GlobalVariables.P2_inventory = 0;
                 }
             }
         }
