@@ -38,32 +38,6 @@ public class Inventory : MonoBehaviour
 
             switch (GlobalVariables.P1_inventory){
                 case 1: 
-                    apple_image_up.SetActive(true); 
-                    pitchfork_image_up.SetActive(false);
-                    flower_image_up.SetActive(false);
-                    break;
-                case 2: 
-                    apple_image_up.SetActive(false);
-                    pitchfork_image_up.SetActive(true); 
-                    flower_image_up.SetActive(false);
-                    break;
-                case 3: 
-                    apple_image_up.SetActive(false);
-                    pitchfork_image_up.SetActive(false);
-                    flower_image_up.SetActive(true); 
-                    break;
-            }
-
-        } else {
-            apple_image_up.SetActive(false);
-            pitchfork_image_up.SetActive(false);
-            flower_image_up.SetActive(false);
-        }
-
-        if (GlobalVariables.P2_inventory > 0) {
-
-            switch (GlobalVariables.P2_inventory){
-                case 1: 
                     apple_image_down.SetActive(true); 
                     pitchfork_image_down.SetActive(false);
                     flower_image_down.SetActive(false);
@@ -84,6 +58,41 @@ public class Inventory : MonoBehaviour
             apple_image_down.SetActive(false);
             pitchfork_image_down.SetActive(false);
             flower_image_down.SetActive(false);
+        }
+
+        if (GlobalVariables.P2_inventory > 0) {
+
+            switch (GlobalVariables.P2_inventory){
+                case 1: 
+                    apple_image_up.SetActive(true); 
+                    pitchfork_image_up.SetActive(false);
+                    flower_image_up.SetActive(false);
+                    break;
+                case 2: 
+                    apple_image_up.SetActive(false);
+                    pitchfork_image_up.SetActive(true); 
+                    flower_image_up.SetActive(false);
+                    break;
+                case 3: 
+                    apple_image_up.SetActive(false);
+                    pitchfork_image_up.SetActive(false);
+                    flower_image_up.SetActive(true); 
+                    break;
+            }
+        } else {
+            apple_image_up.SetActive(false);
+            pitchfork_image_up.SetActive(false);
+            flower_image_up.SetActive(false);
+        }
+
+        if ((Input.GetKeyDown(GlobalVariables.P1_GIVE) && Input.GetKey(GlobalVariables.P2_GIVE))
+        || (Input.GetKey(GlobalVariables.P1_GIVE) && Input.GetKeyDown(GlobalVariables.P2_GIVE)))
+        {
+            Debug.Log("Alt stânga + Alt dreapta apăsate simultan!");
+            
+            var aux = GlobalVariables.P1_inventory;
+            GlobalVariables.P1_inventory = GlobalVariables.P2_inventory;
+            GlobalVariables.P2_inventory = aux;
         }
     }
 
