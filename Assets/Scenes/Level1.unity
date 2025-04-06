@@ -33202,6 +33202,7 @@ MonoBehaviour:
   fireballPrefab: {fileID: 9203836986407692805, guid: 2a5408a4227cba04fb17171d74c6eb45, type: 3}
   fireCooldown: 6
   fireballSpeed: 13
+  attackDuration: 1
 --- !u!1001 &2094056320
 PrefabInstance:
   m_ObjectHideFlags: 0
