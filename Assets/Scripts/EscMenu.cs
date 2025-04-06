@@ -13,7 +13,6 @@ public class EscMenu : MonoBehaviour
     public GameObject fpsCheckmark; // imaginea bifei verzi
 
     private bool isPaused = false;
-    private bool showFPS = false;
 
     void Start()
     {

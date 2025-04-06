@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 713a190c5cbc58c42a2aac446b410974
+guid: 9b04b6631d2174e4ebffa6bb29d1b0fe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4727042720627419889
-    second: pitchfork_0
+      213: 1273615573453357170
+    second: pitchfork 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pitchfork_0
+      name: pitchfork 1_0
       rect:
         serializedVersion: 2
         x: 263
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1fae7193f44d99140800000000000000
-      internalID: 4727042720627419889
+      spriteID: 270c71cbd9acca110800000000000000
+      internalID: 1273615573453357170
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pitchfork 1_0: 1273615573453357170
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

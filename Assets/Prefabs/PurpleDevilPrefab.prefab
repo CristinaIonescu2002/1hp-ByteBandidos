@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 1164720990864265429}
   - component: {fileID: 4804168885264150219}
   - component: {fileID: 1371567409663324330}
+  - component: {fileID: -7528289692977803227}
+  - component: {fileID: -5867974912775792976}
   m_Layer: 0
   m_Name: PurpleDevilPrefab
   m_TagString: Player
@@ -179,7 +181,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0016784668, y: 0.16058141}
+  m_Offset: {x: 0.045327604, y: 0.16058135}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -189,7 +191,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.20578, y: 3.201795}
+  m_Size: {x: 2.472371, y: 3.201795}
   m_EdgeRadius: 0
 --- !u!70 &614089764979273164
 CapsuleCollider2D:
@@ -225,8 +227,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.026441034, y: 0.1630568}
-  m_Size: {x: 2.7588034, y: 3.0114639}
+  m_Offset: {x: 0.03954061, y: 0.16305685}
+  m_Size: {x: 2.4532065, y: 3.0114639}
   m_Direction: 0
 --- !u!114 &7482072109883237611
 MonoBehaviour:
@@ -242,7 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isControlled: 1
   isPlayerOne: 0
-  moveSpeed: 20
+  moveSpeed: 25
   jumpForce: 17
   groundCheck: {fileID: 5719807522526058210}
   groundCheckRadius: 0.3
@@ -303,6 +305,30 @@ MonoBehaviour:
   myCameraFollow: {fileID: 0}
   spawnOffset: {x: 0, y: 0, z: 0}
   isControlled: 1
+--- !u!114 &-7528289692977803227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3329400587279094932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cab0b710fb642046a1c9b7b06ff28e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5867974912775792976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3329400587279094932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b5fc14a70e0c741b64e138ddff887c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3476635254545629768
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 5188913473407928236}
   - component: {fileID: 7715915289320995166}
   - component: {fileID: -2074474001833455785}
+  - component: {fileID: 4897964011127256827}
+  - component: {fileID: 8350227543182449151}
   m_Layer: 0
   m_Name: BlueAngelPrefab
   m_TagString: Player
@@ -150,7 +152,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.036880493, y: 0.06463671}
+  m_Offset: {x: -0.003727913, y: -0.06797171}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -160,7 +162,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 6.162076, y: 6}
+  m_Size: {x: 5.0680532, y: 5.734783}
   m_EdgeRadius: 0
 --- !u!70 &7624758700225929865
 CapsuleCollider2D:
@@ -196,8 +198,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 4.88, y: 4.82}
+  m_Offset: {x: -0.016570788, y: 0}
+  m_Size: {x: 3.454464, y: 4.88}
   m_Direction: 0
 --- !u!50 &2269070262212386259
 Rigidbody2D:
@@ -240,7 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isControlled: 1
   isPlayerOne: 1
-  moveSpeed: 20
+  moveSpeed: 25
 --- !u!114 &7715915289320995166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,3 +279,27 @@ MonoBehaviour:
   myCameraFollow: {fileID: 0}
   spawnOffset: {x: 0, y: 0, z: 0}
   isControlled: 1
+--- !u!114 &4897964011127256827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5513277691459234078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cab0b710fb642046a1c9b7b06ff28e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8350227543182449151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5513277691459234078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b5fc14a70e0c741b64e138ddff887c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
