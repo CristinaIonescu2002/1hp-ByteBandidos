@@ -14,21 +14,19 @@ public class VictoryMenu : MonoBehaviour
         victoryPanel.SetActive(false);
     }
 
-    public void isVictory() 
-    {
-        victory = true;
-    }
-
     void Update()
     {
-        if (victory)
+        if (GlobalVariables.P1_victory && GlobalVariables.P2_victory)
         {
             victoryPanel.SetActive(true);
+            GlobalVariables.P1_victory = false;
+            GlobalVariables.P2_victory = false;
         }
     }
 
     public void PlayGame(){
         var nameScene = GlobalVariables.GAME_LVL;
+        Debug.Log("Inca suntem in casa");
 
         switch (nameScene)
         {

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class GlobalVariables : MonoBehaviour
 {
@@ -41,6 +42,21 @@ public class GlobalVariables : MonoBehaviour
     // Option menu
     public static bool ShowFPSDetails = true;
 
+    // victory
+    public static bool P1_victory = false;
+    public static bool P2_victory = false;
+
+    // inventory
+    // Apple 1, Pitchfork 2, Flower 3
+    public static int P1_inventory = 0;
+    public static int P2_inventory = 0;
+    public static List<string> inventory_images = new List<string> {
+        "Apple",
+        "Pitchfork",
+        "Flower"
+    };
+
+
     void Start()
     {
         Debug.Log("Current game mode: " + GAME_MODE + "!");
@@ -55,19 +71,19 @@ public class GlobalVariables : MonoBehaviour
                 P1_DOWN = "s";
                 P1_LEFT = "a";
                 P1_RIGHT = "d";
-                P1_DROP = ""; // ma gandeam la left shift
-                P1_PICK = ""; // ma gandeam la left shift
-                P1_GIVE = ""; // ma gandeam la left ctrl
-                P1_SWITCHFORM = "left shift"; // ma gandeam la left shift
+                P1_DROP = "";
+                P1_PICK = "left ctrl";
+                P1_GIVE = ""; // alt
+                P1_SWITCHFORM = "left shift";
 
-                P2_UP = "up"; // sageata sus
-                P2_DOWN = "down"; // sageata jos
-                P2_LEFT = "left"; // sageata stanga
-                P2_RIGHT = "right"; // sageata dreapta
-                P2_DROP = ""; // ma gandeam la right shift
-                P2_PICK = ""; // ma gandeam la right shift
-                P2_GIVE = ""; // ma gandeam la right ctrl
-                P2_SWITCHFORM = "right shift"; // ma gandeam la right shift
+                P2_UP = "up";
+                P2_DOWN = "down";
+                P2_LEFT = "left";
+                P2_RIGHT = "right";
+                P2_DROP = "";
+                P2_PICK = "right ctrl";
+                P2_GIVE = ""; // alt
+                P2_SWITCHFORM = "right shift"; 
                 break;
 
             case "Singleplayer": 
@@ -75,10 +91,10 @@ public class GlobalVariables : MonoBehaviour
                 P1_DOWN = P2_DOWN = "s";
                 P1_LEFT = P2_LEFT = "a";
                 P1_RIGHT = P2_RIGHT = "d";
-                P1_DROP = P2_DROP = ""; // ma gandeam la left shift
-                P1_PICK = P2_PICK = ""; // ma gandeam la left shift
-                P1_GIVE = P2_GIVE = ""; // ma gandeam la left ctrl
-                P1_SWITCHFORM = P2_SWITCHFORM = "left shift"; // ma gandeam la left shift
+                P1_DROP = P2_DROP = "";
+                P1_PICK = P2_PICK = "left ctrl";
+                P1_GIVE = P2_GIVE = ""; // alt
+                P1_SWITCHFORM = P2_SWITCHFORM = "left shift";
 
                 SWITCH = "space";
                 break;
