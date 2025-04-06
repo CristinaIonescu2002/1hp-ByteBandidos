@@ -33,7 +33,7 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("AAAA-" + GlobalVariables.P1_inventory + "-" + GlobalVariables.P2_inventory);
+        // Debug.Log("AAAA-" + GlobalVariables.P1_inventory + "-" + GlobalVariables.P2_inventory);
         if (GlobalVariables.P1_inventory > 0) {
 
             switch (GlobalVariables.P1_inventory){

@@ -59,7 +59,7 @@ public class GlobalVariables : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Current game mode: " + GAME_MODE + "!");
+        // Debug.Log("Current game mode: " + GAME_MODE + "!");
 
     }
 
